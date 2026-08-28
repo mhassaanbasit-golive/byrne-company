@@ -131,7 +131,7 @@ export default function ChatWidget() {
           playPopSound();
           setIsOpen(true);
         }}
-        className="fixed bottom-6 right-6 z-40 bg-white text-black font-sans tracking-widest uppercase flex items-center justify-center gap-1.5 border border-neutral-200/50"
+        className="fixed bottom-6 left-6 z-40 bg-white text-black font-sans tracking-widest uppercase flex items-center justify-center gap-1.5 border border-neutral-200/50"
         style={{
           borderRadius: '999px',
           width: '120px',
