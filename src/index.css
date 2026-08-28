@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F7F7F5;
+    color: #0A0A0A;
+  }
+  
+  h1, h2 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+/* Force mobile styles on screens smaller than md (768px) */
+@media (max-w: 767px) {
+  h1, .font-cormorant, .text-5xl, .text-6xl, .text-7xl {
+    font-size: 44px !important;
+    font-family: 'Cormorant Garamond', serif !important;
+    line-height: 1.15 !important;
+  }
+  
+  body, p, .text-sm, .text-base, .text-lg, .text-xl, .font-sans {
+    font-size: 16px !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+  }
+
+  /* Retain styling for micro-metadata/badges */
+  .text-xs, .text-\[11px\], .text-\[13px\] {
+    font-size: 11px !important;
+  }
+  
+  /* Force side padding of exactly 20px (1.25rem) on mobile */
+  .px-6, .px-8, .px-10, .px-12, .px-16 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+/* Home Hero Targeted Elements Overrides (Smaller & Left Aligned) */
+#home-hero-title {
+  font-size: 32px !important;
+}
+#hero-section p {
+  font-size: 14px !important;
+  max-width: 420px;
+}
+#explore-listings-hero-btn, #contact-hero-btn {
+  font-size: 11px !important;
+  padding: 10px 24px !important;
+  letter-spacing: 0.1em !important;
+}
+
+@media (min-width: 768px) {
+  #home-hero-title {
+    font-size: 52px !important;
+  }
+  #hero-section p {
+    font-size: 16px !important;
+    max-width: 480px;
+  }
+}
+
+/* Hide mobile scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}

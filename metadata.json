@@ -1,0 +1,6 @@
+{
+  "name": "Byrne Company",
+  "description": "Your national retail investment partner. Acquisition and disposition of premier shopping centers across the US.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
